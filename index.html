@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register | Form</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4dff4a55ad.js"></script>
+    <!-- materialize -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+<!-- nav -->
+<nav>
+    <div class="nav-wrapper #536dfe indigo accent-2 white-text">
+        <a href="#" class="brand-logo">Javascript</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Studio</a></li>
+        <li><a href="badges.html">Panels</a></li>
+        <li><a href="collapsible.html">Github</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- nav -->
+    
+<!-- header | header | content-->
+<header class="header content #536dfe indigo accent-2 white-text center-align">
+    <div class="container">
+            <h3>Form Validation</h3>
+    <i class="fas fa-bars" id="elementsBtn" onclick="displayElements()"></i>
+    </div>
+    
+</header>
+<!-- header | header end -->
+
+<!-- section | content -->
+<section class="content #bdbdbd grey lighten-1">
+    <div class="container center-align white-text intro">
+        <h2>Introduction</h2>
+        <!-- user logo -->
+        <i class="fas fa-users white-text"></i>
+
+        <p>A Javascript form validation code piece that takes in user data to account for correct
+        criteria when filling out a registration form.</p>
+    
+    </div>
+</section>
+<!-- section | content end -->
+
+<!-- main | main -->
+<main class="main content #bdbdbd grey lighten-1">
+    <div class="container #536dfe indigo accent-2 center-align  white-text">
+        <h1>Registration</h1>
+        <h3>Form Validation</h3>
+        <div class="placement #536dfe indigo accent-2"></div>    
+        
+        <div class="container">
+            
+
+            <form class="form" id="form">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label class="white-text" for="firstname">First Name</label>
+                        <input class="white-text center-align" type="text" id="firstname" onfocusout="validateFirstname()" autocomplete="off">
+                        <span class="text-helper"></span>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <label class="white-text" for="lastname">Last Name</label>
+                        <input class="white-text center-align" type="text" class="text-white" id="lastname" onfocusout="validateLastname()" autocomplete="off">
+                        <span class="text-helper"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label class="white-text" for="email">Email</label>
+                        <input class="white-text center-align" type="email" name="email" id="email" onfocusout="validateEmail()" autocomplete="off">
+                        <span class="text-helper"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label class="white-text center-align" for="lastname">Username</label>
+                        <input class="white-text center-align" type="text" name="username" id="username" onfocusout="validateUsername()" autocomplete="off">
+                        <span class="text-helper"></span>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label class="white-text" for="password">Password</label>
+                        <input class="white-text" type="password" id="password" onfocusout="validatePassword()" autocomplete="off">
+                        <span class="text-helper"></span>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <label class="white-text" for="confirmpassword">Confirm Password</label>
+                        <input class="white-text" type="password" name="Confirm Password" id="confirmpassword" onfocusout="validateConfirmPassword()" autocomplete="off">
+                        <span class="text-helper"></span>
+                    </div>
+                </div>
+                
+                <button id="submitBtn" class="submitBtn">Join</button>
+
+            </form>
+                <!-- form | regForm end -->               
+
+
+        </div>
+        
+        
+
+    </div>
+    <!-- div | content end -->
+</main>
+<!-- main | main end -->
+
+    <!-- section | content -->
+    <section class="content #bdbdbd grey lighten-1">
+        <div class="container center-align white-text">
+            <h2>Information</h2>
+            <!-- user logo -->
+            <i class="fas fa-users white-text"></i>
+            <p>Displays helper notes to fill in particular form entries</p>
+            <br>
+            <p>Can add more complex functions for checking particular parameters.</p>
+            <br>
+            <p>Used for form validation and sign in validation practices.</p>
+        </div>
+    </section>
+    <!-- section | content -->
+    
+<!-- footer | footer -->
+<footer class="page-footer #536dfe indigo accent-2">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- col left -->
+            <div class="col l6 s12 center-align">
+                <h5 class="white-text left">Project : Registration Form</h5>
+                <p class="white-text left">Fill out the registration form to view the interactive validation.</p>
+                <p class="white-text left">If you followed the correct criteria, an account will be created for you.</p>
+            </div>
+            <!-- col left end -->
+
+            <!-- col right -->
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>    
+                    <li><a class="white-text" href="https://bionic-fish.github.io/StudioGhibAPI/">Project : Studio Ghibli API</a></li>
+                    <li><a class="white-text" href="#!">Project : Scalable Panels App</a></li>
+                    <li><a class="white-text" href="#!">Project : Register Form Validation</a></li>
+                </ul>
+            </div>
+            <!-- col right end -->
+        </div>
+        <!-- row end -->
+    </div>
+    <!-- container end -->
+
+    <!-- copyright -->
+    <div class="footer-copyright">
+        <div class="container">
+        © 2019 Decode Technology
+        <a class="white-text right" href="#!">Github</a>
+        </div>
+    </div>
+    <!-- copyright end -->
+</footer>
+<!-- footer end -->
+
+     
+          
+                
+                
+
+       
+
+ 
+
+        
+
+        <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
